@@ -1,2 +1,2 @@
 # snerd_project
-I make lists and I rate them
+I make lists of things and I rate them
