@@ -1,0 +1,15 @@
+<h1>{{ icecreambrand.name }}</h1> {# or just {{ icecreambrand }} #}
+
+<h2>Flavors</h2>
+<ul>
+{% for fl in icecreambrand.icecream_set.all %}
+    <li>{{ fl.name }}</li> {# or {{ fl }} #}
+{% endfor %}
+</ul>
+
+<h2>Ratings</h2>
+<ul>
+{% for ra in icecreambrand.icecream_set.all %}
+    <li>{{ ra.rating }}</li>
+{% endfor %}
+</ul>

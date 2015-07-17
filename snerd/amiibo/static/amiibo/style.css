@@ -1,0 +1,17 @@
+body {
+	background: url("images/mario_birthday_pattern.jpg");
+}
+
+h1 {
+	color: red;
+}
+
+li {
+	list-style-type: none;
+	display: inline;
+}
+
+li a {
+	color: red;
+	background-color: black;
+}

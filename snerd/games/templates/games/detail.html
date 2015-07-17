@@ -1,0 +1,21 @@
+<h1>{{ game.title }}</h1> {# or just {{ game }} #}
+
+<h2>Release Date</h2>
+<p>{{ game.release_date }}</p>
+
+<h2>Game Company</h2>
+<ul>
+{% for co in game.company.all %}
+    <li>{{ co.name }}</li>
+{% endfor %}
+</ul>
+
+<h2>Game Platform</h2>
+<ul>
+{% for pl in game.platform.all %}
+    <li>{{ pl.name }}</li>
+{% endfor %}
+</ul>
+
+<h2>Rating</h2>
+<p>{{ game.rating }}</p>

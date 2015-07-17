@@ -1,0 +1,11 @@
+{% load staticfiles %}
+
+<link rel ="stylesheet" type="text/css" href="{% static 'ice_cream/style.css' %}" />
+
+<h1>Ice Cream Brands</h1>
+
+<ul>
+  {% for icecream in ice_cream_list %}  {# for MODEL in .. #}
+    <li><a href="{% url 'ice_cream:detail' icecream.pk %}">{{ icecream.name }}</a></li>
+  {% endfor %}
+</ul>

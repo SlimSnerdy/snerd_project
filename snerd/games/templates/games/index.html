@@ -1,0 +1,11 @@
+{% load staticfiles %}
+
+<link rel ="stylesheet" type="text/css" href="{% static 'games/style.css' %}" />
+
+<h1>Games</h1>
+
+<ul>
+  {% for game in game_list %} {# for MODEL in .. #}
+    <li><a href="{% url 'games:detail' game.pk %}">{{ game.title }}</a></li>
+  {% endfor %}
+</ul>

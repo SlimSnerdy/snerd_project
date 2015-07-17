@@ -1,0 +1,7 @@
+<!-- <h1>{{ amiiboseries.name }} Series</h1> {# or just {{ amiiboseries }} #} -->
+
+<ul>
+{% for series in amiiboseries.amiibo_set.all %}
+    <li>{{ series.name }}</li> {# or {{ series }} #}
+{% endfor %}
+</ul>
