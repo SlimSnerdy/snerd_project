@@ -4,28 +4,30 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Amiibo</title>
-  <link rel ="stylesheet" type="text/css" href="{% static 'amiibo/style.css' %}" />
-  <script src="{% static 'amiibo/js/jquery-2.1.4.min.js' %}"></script>
-  <script src="{% static 'amiibo/js/js_fade.js' %}"></script>
+	<meta charset="utf-8">
+	<title>Amiibo</title>
+	<link rel ="stylesheet" type="text/css" href="{% static 'amiibo/style.css' %}">
+	<script src="{% static 'amiibo/js/jquery-2.1.4.min.js' %}"></script>
+	<script src="{% static 'amiibo/js/js_fade.js' %}"></script>
 </head>
 
 <body>
-
-  <h1>Amiibo</h1>
-
-<div class= "FadeHover">  
-  <ul>
-    {% for amiibo in amiibo_list %} {# for MODEL in .. #}
-      <li>
-        <a href="{% url 'amiibo:detail' amiibo.pk %}">{{ amiibo.name }}
-        <img src="{{ amiibo.image.url }}">
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-  
-  </body>
-  
+	
+	<div>
+		<h1>Amiibo</h1>
+	</div>
+	
+	<ul>
+	{% for amiibo in amiibo_list %}	{# for MODEL in .. #}
+		<li>
+			<a href="{% url 'amiibo:detail' amiibo.pk %}">
+				<img src="{{ amiibo.image.url }}"> 
+				<p>{{ amiibo.name }}</p>
+			</a>
+		</li>
+	{% endfor %}
+	</ul>
+	
+</body>
+	
 </html>

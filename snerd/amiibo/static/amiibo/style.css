@@ -1,17 +1,47 @@
 body {
 	background: url("images/mario_birthday_pattern.jpg");
+	font-family: Arial;
+}
+
+div {
+	text-align: center;
+	margin-top: 25px;
 }
 
 h1 {
+	background-color: white;
 	color: red;
+	display: inline;
+	font-size: 40px;
+	border-style: solid;
+	border-width: 5px;
+	padding: 5px;
+}
+
+ul {
+	margin-top: 25px;
 }
 
 li {
+	display: inline-block;
 	list-style-type: none;
-	display: inline;
+	margin: 25px;
+	text-align: center;
 }
 
-li a {
-	color: red;
+img {
+	display: block;
+}
+
+p {
 	background-color: black;
+	border-radius: 12px;
+	color: cyan;
+	display: inline;
+	font-size: 26px;
+	padding: 24px;
+}
+
+a {
+	text-decoration: none;
 }
