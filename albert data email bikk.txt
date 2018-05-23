@@ -1,0 +1,28 @@
+resononing to start the job at 5 am
+daily updates?
+every minutes adhoc gets updated
+
+start at sunday night or during the day
+
+
+sundday - thursday proposal (at any time) so the data is ready at 5 am 
+when do you expect the output when is the dead line for you at what time 5 am? 10 am?
+and daily
+
+sftp get statisics?
+
+how long to go for (1 week?)
+
+
+
+mon-friday
+if run at 5 am potentially in 2 hrs vs like 4 during day
+it indirectly hits the prod databases (alias tables) way it it designed
+can't run sunday because issuances have happened over weekend (special processings, stipends, not regular payments.. accenture)
+4 files total 3 dmps (dmp1 dmp2 dmp3), 1 count report html (tables)
+we have to sftp the 4 files zipped/password (jerry fong) by 8 am ready and zipped/password
+	(has a scripted job (bill) to have the files to used by his team)
+	latest 9 am or have ready by 8 am
+	
+remoting
+static ip
